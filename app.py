@@ -30,13 +30,13 @@ class Project(db.Document):
             "content": self.content
         }
 
-@app.route("/api/db_populate", methods=["POST"])
-def db_populate():
-    project1 = Project(project_id=1, title="GAME OF THRONES", author="GEORGE R. MARTIN", mentor="A. YADAV", date=datetime.now(), content="Good project. wonderful")
+# @app.route("/api/db_populate", methods=["POST"])
+# def db_populate():
+#     project1 = Project(project_id=1, title="GAME OF THRONES", author="GEORGE R. MARTIN", mentor="A. YADAV", date=datetime.now(), content="Good project. wonderful")
     
-    project1.save()
+#     project1.save()
 
-    return make_response("", 201)
+#     return make_response("", 201)
 
 @app.route("/api/projects", methods=["GET","POST"])
 def api_projects():
