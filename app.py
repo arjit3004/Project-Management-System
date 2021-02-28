@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 database_name = "API"
-DB_URI ="mongodb+srv://arjit:Abcde12345@cluster0.sl9zz.mongodb.net/API?retryWrites=true&w=majority"
+DB_URI ="mongodb+srv://arjit:pwd@cluster0.sl9zz.mongodb.net/API?retryWrites=true&w=majority"
 app.config["MONGODB_HOST"] = DB_URI
 
 db = MongoEngine()
